@@ -31,7 +31,7 @@ function post_tweet() {
 	$currentTime = date('H:i:s');
 	
 	/* where we store the last tweet id we received */
-	$file ='tweet_id.txt';
+	$file = $path . 'tweet_id.txt';
 	$last_tweet_id = file_get_contents($file);
 
 	/* new connection Set the authorization values */
